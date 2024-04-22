@@ -1,0 +1,92 @@
+/* set margin and padding 0 */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* side bar for navigation bar  */
+.sideBar {
+  width: 100px;
+  height: 100%;
+  position: fixed;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* navigation bar  */
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation li{
+    border-bottom: 1px solid black;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* before hover  */
+
+.navigation li img{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+}
+
+.navigation a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  display: none;
+}
+
+/* after hover  */
+.navigation li:hover img{
+    animation: movingIcon 0.2s linear forwards;
+}
+
+@keyframes movingIcon {
+    0%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(15px);
+        opacity: 0;
+    }
+}
+.navigation li:hover a{
+    display: block;
+    animation: movingText 0.2s linear forwards;
+}
+
+@keyframes movingText {
+    0%{
+        transform: translateX(-15px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+/* main body design start here  */
+
+.mainBody{
+    margin-left: 100px;
+}
