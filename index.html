@@ -22,74 +22,120 @@
       <ul class="navigation">
         <li style="border-top: 1px solid black">
           <img src="./icons/home.png" alt="home" />
-          <a href="/">Home</a>
+          <a href="#mainBody">Home</a>
         </li>
         <li>
           <img src="./icons/creative-thinking.png" alt="skills" />
-          <a href="/skills">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
           <img src="./icons/settings.png" alt="projects" />
-          <a href="/projects">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
           <img src="./icons/blogs.png" alt="blogs" />
-          <a href="/blog">Blogs</a>
+          <a href="#blogs">Blogs</a>
         </li>
         <li>
           <img src="./icons/user.png" alt="about" />
-          <a href="/about">About</a>
+          <a href="#about">About</a>
         </li>
       </ul>
     </aside>
-    <main class="mainBody">
-      <div class="homeContainer">
-        <div class="home1">
-          <div class="home1Body">
-            <div>
-              <h1 class="introText">
-                Hi! I am
-                <button class="mern-button" disabled style="">MERN</button>
-              </h1>
-              <h1>Md. Nafis Iqbal</h1>
-            </div>
-            <h4>
-              Developing Websites for over 2 years as a MERN-Stack developer
-            </h4>
-            <div class="btnContainerHome">
-              <button class="resumeBtn">
-                <i class="fa-solid fa-download"></i>resume
-              </button>
-              <button class="projectsBtn">projects</button>
-            </div>
-            <div class="reactContainer">
-              <i class="fa-brands fa-react reactIcon"></i>
-            </div>
-          </div>
-          <div class="home1Footer">
-            <div>
-              <p>Social Network:</p>
-              <div class="linkContainer">
-                <a class="link" target="_blank" href="https://www.facebook.com/nafisiqbal.n/"><i class="fa-brands fa-facebook"></i></a>
-                <a class="link" target="_blank" href="https://www.linkedin.com/in/mdnafisiqbal"><i class="fa-brands fa-linkedin"></i></a>
-                <a class="link" target="_blank" href="https://github.com/NafisOfficial"><i class="fa-brands fa-github"></i></a>
+    <div class="mainContain">
+      <main class="mainBody" id="mainBody">
+        <div class="homeContainer">
+          <div class="home1">
+            <div class="home1Body">
+              <div>
+                <h1 class="introText">
+                  Hi! I am
+                  <button class="mern-button" disabled>MERN</button>
+                </h1>
+                <h1>Md. Nafis Iqbal</h1>
+              </div>
+              <h4>
+                Developing Websites for over 2 years as a MERN-Stack developer
+              </h4>
+              <div class="btnContainerHome">
+                <button class="resumeBtn">
+                  <i class="fa-solid fa-download"></i>resume
+                </button>
+                <button class="projectsBtn">projects</button>
+              </div>
+              <div class="reactContainer">
+                <i class="fa-brands fa-react reactIcon"></i>
               </div>
             </div>
-            <div>
-              <p>Contact :</p>
-              <p>Email: nafisiqbal.net2002@gmail.com</p>
-              <p>Whatsapp: +8801709912722</p>
+            <div class="home1Footer">
+              <div>
+                <p>Social Network:</p>
+                <div class="linkContainer">
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://www.facebook.com/nafisiqbal.n/"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/mdnafisiqbal"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://github.com/NafisOfficial"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <div>
+                <p>Contact :</p>
+                <p>Email: nafisiqbal.net2002@gmail.com</p>
+                <p>Whatsapp: +8801709912722</p>
+              </div>
+            </div>
+          </div>
+          <div class="home2">
+            <div class="profileContainer">
+              <p>
+                Create your website in
+                <span style="font-weight: 800">MERN-Stack</span> development
+              </p>
+              <div class="iconContainer">
+                <p class="nodejsIcon">
+                  <i class="fa-brands fa-node" style=""></i>
+                </p>
+                <p class=""><i class="fa-brands fa-js jsIcon" style=""></i></p>
+                <img
+                  class="userPic"
+                  src="./icons/nafis-bg-removed.png"
+                  alt="nafis"
+                />
+                <p class="dbIcon">
+                  <i class="fa-solid fa-database" style=""></i>
+                </p>
+              </div>
+              <div class="newsletter">
+                Subscribe my newsletter
+                <span
+                  style="
+                    background-color: black;
+                    color: white;
+                    padding: 8px 12px;
+                    margin-left: 5px;
+                  "
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="home2">
-          <p>
-            Create your website in
-            <span style="font-weight: 800">MERN-Stack</span> development
-          </p>
-        </div>
-      </div>
-    </main>
+      </main>
+      <div id="skills" class="skillContainer">skills section is here</div>
+    </div>
     <script
       src="https://kit.fontawesome.com/c624096753.js"
       crossorigin="anonymous"

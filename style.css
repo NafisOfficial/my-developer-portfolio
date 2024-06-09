@@ -86,9 +86,13 @@
 
 
 /* main body design start here  */
-
-.mainBody{
+.mainContain{
     margin-left: 100px;
+}
+
+/* home body design is here  */
+.mainBody{
+    /* margin-left: 100px; */
     height: 100vh;
     width: 92% + 9px;
 }
@@ -130,6 +134,11 @@
     width: 90px;
     border-radius: 25px;  
     font-size: 20px;
+    transition:  background-color 0.3s ease;
+}
+
+.mern-button:hover{
+    background-color: #EF9C66;
 }
 
 .btnContainerHome{
@@ -172,7 +181,7 @@
 
 .reactIcon{
     position: relative;
-    right: 10rem;
+    right: 3rem;
     bottom: 3rem;
     color: #74C0FC;
     font-size: 100px;
@@ -206,4 +215,58 @@
 /* home2 section design is here  */
 .home2{
     background-color: #FAEBD7;
+}
+
+.profileContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    
+}
+
+.userPic{
+ border: 1px solid black;
+ border-radius: 50%;
+ height: 250px;
+ width: 250px;
+ position: relative;
+ bottom: 4rem;
+}
+.iconContainer{
+    position: static;
+}
+
+.nodejsIcon{
+    color: #038c0c; 
+    font-size: 60px;
+    position: relative;
+    left: -9rem;
+    top: -0rem;
+}
+
+.jsIcon{
+    position: relative;
+    color: #FFD43B; 
+    font-size: 50px;
+    left: 15rem;
+    top: -2rem;
+}
+.dbIcon{
+    position: relative;
+    color: #74C0FC; 
+    font-size: 50px;
+    left: -5rem;
+    top: -4rem;
+}
+
+.newsletter{
+    background-color: white;
+    padding: 20px;
+    color: gray;
+}
+
+.skillContainer{
+    height: 100vh;
 }
