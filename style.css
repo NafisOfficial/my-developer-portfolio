@@ -89,4 +89,121 @@
 
 .mainBody{
     margin-left: 100px;
+    height: 100vh;
+    width: 92% + 9px;
+}
+
+/* home page design here  */
+.homeContainer{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+}
+
+/* home1 section design is here  */
+/* home1 body design here  */
+.home1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+
+.home1Body{
+    margin: 10% 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.introText{
+    font-size: 50px;
+    display: flex;
+    gap: 10px;
+    justify-items: center;
+}
+.mern-button{
+    background-color: #1d27dfcc;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 90px;
+    border-radius: 25px;  
+    font-size: 20px;
+}
+
+.btnContainerHome{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.resumeBtn{
+    background-color: #1d27dfcc;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.projectsBtn{
+    background-color: #EF9C66;
+    border: 1px solid #EF9C66;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.reactContainer{
+    position: static;
+    display: flex;
+    justify-content: end;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.reactIcon{
+    position: relative;
+    right: 10rem;
+    bottom: 3rem;
+    color: #74C0FC;
+    font-size: 100px;
+    font-weight: 800px;
+    animation: rotate 15s linear infinite;
+}
+
+
+/* home1 footer design here */
+.home1Footer{
+ background-color: black;
+ color: white;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ padding: 5% 5% 9% 5%;
+}
+
+.linkContainer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.link{
+    list-style: none;
+    color: white;
+    margin-top: 10px;
+}
+.link i{
+    font-size: 30px;
+}
+/* home2 section design is here  */
+.home2{
+    background-color: #FAEBD7;
 }
