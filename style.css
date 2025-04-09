@@ -231,6 +231,25 @@
   margin-top: 5rem;
 }
 
+/* profile info design */
+.profileInfo{
+   text-align: center;
+   position: relative;
+   bottom: 2rem;
+}
+
+.profileInfo p{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.highlight{
+  background-color: #ffd43b;
+  padding: 2px;
+}
+
+
 .userPic {
   border: 1px solid black;
   border-radius: 50%;
@@ -242,6 +261,8 @@
 .iconContainer {
   position: static;
 }
+
+
 
 .nodejsIcon {
   color: #038c0c;
@@ -268,7 +289,8 @@
 
 .newsletter {
   background-color: white;
-  padding: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
   color: gray;
 }
 
