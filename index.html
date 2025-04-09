@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/c624096753.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,10 +18,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- navigation bar -->
+    <!---------------------------------------------------------------
+                         navigation bar 
+    ----------------------------------------------------------------->
     <aside class="sideBar">
       <ul class="navigation">
-        <li style="border-top: 1px solid black">
+        <li class="navHome">
           <img src="./icons/home.png" alt="home" />
           <a href="#mainBody">Home</a>
         </li>
@@ -42,6 +45,9 @@
         </li>
       </ul>
     </aside>
+    <!---------------------------------------------------------------
+                         Main body contain
+    ----------------------------------------------------------------->
     <div class="mainContain">
       <main class="mainBody" id="mainBody">
         <div class="homeContainer">
@@ -67,6 +73,45 @@
                 <i class="fa-brands fa-react reactIcon"></i>
               </div>
             </div>
+            <div class="home1Body2">
+              <div class="profileContainer">
+                <p>
+                  Create your website in
+                  <span style="font-weight: 800">MERN-Stack</span> development
+                </p>
+                <div class="iconContainer">
+                  <p class="nodejsIcon">
+                    <i class="fa-brands fa-node" style=""></i>
+                  </p>
+                  <p class="">
+                    <i class="fa-brands fa-js jsIcon" style=""></i>
+                  </p>
+                  <img
+                    class="userPic"
+                    src="./icons/nafis-bg-removed.png"
+                    alt="nafis"
+                  />
+                  <p class="dbIcon">
+                    <i class="fa-solid fa-database" style=""></i>
+                  </p>
+                </div>
+                <div class="newsletter">
+                  Subscribe my newsletter
+                  <span
+                    style="
+                      background-color: black;
+                      color: white;
+                      padding: 8px 12px;
+                      margin-left: 5px;
+                    "
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <!---------------------------------------------------------------
+                                  homepage footer
+            ----------------------------------------------------------------->
             <div class="home1Footer">
               <div>
                 <p>Social Network:</p>
@@ -98,6 +143,9 @@
               </div>
             </div>
           </div>
+          <!---------------------------------------------------------------
+                         homepage profile container 
+          ----------------------------------------------------------------->
           <div class="home2">
             <div class="profileContainer">
               <p>
@@ -134,8 +182,25 @@
           </div>
         </div>
       </main>
-      <div id="skills" class="skillContainer">skills section is here</div>
+      <!---------------------------------------------------------------
+                         Skill showcase
+      ----------------------------------------------------------------->
+      <div id="skills" class="skillContainer">
+        
+      </div>
+      <div id="projects" class="projectsContainer">
+        <h1 style="margin-left: 10px">My projects</h1>
+      </div>
+      <!---------------------------------------------------------------
+                         about page 
+      ----------------------------------------------------------------->
+      <div id="about">about page</div>
+      <!---------------------------------------------------------------
+                         blog page
+    ----------------------------------------------------------------->
+      <div id="blogs">blog page</div>
     </div>
+    <script src="./scripts/scripts.js"></script>
     <script
       src="https://kit.fontawesome.com/c624096753.js"
       crossorigin="anonymous"
