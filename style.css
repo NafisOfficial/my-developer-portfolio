@@ -97,7 +97,7 @@
 /* home body design is here  */
 .mainBody {
   /* margin-left: 100px; */
-  height: 100vh;
+  /* height: 100vh; */
   width: 92% + 9px;
 }
 
@@ -295,19 +295,49 @@
 }
 
 /* skill section is here */
-.skillContainer {
-  height: 100vh;
+.skillContainer{
+  margin-top: 50px;
 }
 
-.chartContainer {
+
+
+.skillItemContainer{
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.Skill-C-1{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-C-2{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skill-C-3{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.SkillShowCase{
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
 }
 
 
 /* project section start from here  */
 
 .projectsContainer {
-  height: 100vh;
+  margin-top: 50px;
+  /* height: 100vh; */
 }
 
 /* Device specific design here  */
