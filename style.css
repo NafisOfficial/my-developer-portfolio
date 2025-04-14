@@ -132,13 +132,6 @@
 
 /*Text typing effect*/
 
-.T1{
-
-}
-
-.T2{
-
-}
 
 .T3{
   width: 80%;
@@ -366,6 +359,16 @@
   display: flex;
   justify-content: space-between;
   gap: 150px;
+  position: relative;
+}
+
+.SkillShowCase:hover{
+  background-color: burlywood;
+  padding: 2px 5px;
+  border-radius: 5px;
+  z-index: 1;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 
