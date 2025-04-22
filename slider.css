@@ -9,10 +9,80 @@
         what's app: +8801709912722
 -------------------------------------*/
 
+.sliderContainer {
+  height: 400px;
+  width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 4px solid sandybrown;
+  position: relative;
+  overflow: hidden;
+}
 
-.sliderContainer{
-    height: 400px;
-    width: 90%;
-    margin: 50px auto;
-    border: 4px solid sandybrown
+.parentOfSlides {
+  display: flex;
+  width: 300%;
+}
+
+.sliderContainer input {
+  display: none;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.slideImageContainer {
+  flex: 1;
+  height: 350px;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  transition: transform 8s linear;
+  display: block;
+}
+
+.slideImageContainer:hover img {
+  transform: translateY(calc(-100% + 350px));
+}
+
+.slideDetails {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+/* .projectInfo{
+    width: 50%;
+} */
+
+.NavigatorContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 10px;
+  gap: 10px;
+}
+
+.navBtn {
+  background: rgb(224, 113, 15);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navBtn:hover {
+  background-color: rgb(177, 87, 8);
 }
