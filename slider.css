@@ -21,6 +21,7 @@
 
 .parentOfSlides {
   display: flex;
+  transition: transform 0.6s ease;
   width: 300%;
 }
 
@@ -32,6 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-inline: 30px;
   width: 100%;
   gap: 20px;
 }
@@ -39,7 +41,6 @@
 .slideImageContainer {
   flex: 1;
   height: 350px;
-  /* width: 50%; */
   overflow: hidden;
   position: relative;
   border: 1px solid #ccc;
@@ -49,7 +50,7 @@
 .slide img {
   width: 100%;
   height: auto;
-  transition: transform 8s linear;
+  transition: transform 5s linear;
   display: block;
 }
 
@@ -64,10 +65,6 @@
   margin-left: 50px;
   flex-direction: column;
 }
-
-/* .projectInfo{
-    width: 50%;
-} */
 
 .NavigatorContainer {
   position: absolute;
@@ -84,8 +81,27 @@
   padding: 3px 10px;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .navBtn:hover {
   background-color: rgb(177, 87, 8);
+}
+
+/* Highlight active dot */
+#slide1:checked ~ .NavigatorContainer label[for="slide1"],
+#slide2:checked ~ .NavigatorContainer label[for="slide2"],
+#slide3:checked ~ .NavigatorContainer label[for="slide3"] {
+  background-color: #c90909;
+}
+
+/* Slide movement using transform */
+#slide1:checked ~ .parentOfSlides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .parentOfSlides {
+  transform: translateX(-33.333333%);
+}
+#slide3:checked ~ .parentOfSlides {
+  transform: translateX(-66.666666%);
 }
